@@ -7,7 +7,7 @@ h1 {
 
 a {
   font-size: 1.8vw;
-  color: black;
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
@@ -15,9 +15,47 @@ a {
 li {
   list-style: none;
   text-align: center;
-  justify-content: space-between;
+  display: inline;
+  padding: 16px;
+  font-weight: 700;
 }
 
 ul {
-  text-orientation: sideways;
+  background-color: #333333;
+}
+
+h2 {
+  font-size: 1.5vw;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 1.4vw;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#splashbillede {
+  filter: blur(50%);
+  max-width: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#photos {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 98vw;
+}
+
+@media (min-width: 600px) {
+  #photos {
+    grid-template-columns: 1fr 1fr;
+    max-width: 50vw;
+  }
 }
